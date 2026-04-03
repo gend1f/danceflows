@@ -6,7 +6,12 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://danceflow.ru/about</loc>
+    <loc>https://danceflow.ru/index</loc>
+    <lastmod>2024-03-25</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://danceflow.ru/courses</loc>
     <lastmod>2024-03-25</lastmod>
     <priority>0.8</priority>
   </url>
