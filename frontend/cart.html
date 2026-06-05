@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корзина - DanceFlow</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header-content">
+            <a href="index.html" class="logo-link">
+                <svg class="logo" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="20" cy="8" r="4" fill="url(#grad1)"></circle>
+                    <path d="M20 12 C18 14, 16 18, 15 22" stroke="url(#grad1)" stroke-width="3" stroke-linecap="round" fill="none"></path>
+                    <path d="M19 14 C17 13, 14 11, 12 8" stroke="url(#grad1)" stroke-width="3" stroke-linecap="round" fill="none"></path>
+                    <path d="M20 14 C23 16, 26 17, 30 15" stroke="url(#grad1)" stroke-width="3" stroke-linecap="round" fill="none"></path>
+                    <path d="M16 22 C14 26, 12 30, 10 34" stroke="url(#grad1)" stroke-width="3" stroke-linecap="round" fill="none"></path>
+                    <path d="M15.5 22 C18 26, 22 30, 26 32" stroke="url(#grad1)" stroke-width="3" stroke-linecap="round" fill="none"></path>
+                    <defs>
+                        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#ea580c;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#dc2626;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <span class="logo-text">DanceFlow</span>
+            </a>
+
+            <nav class="nav-desktop">
+                <a href="index.html" class="nav-link">Главная</a>
+                <a href="courses.html" class="nav-link">Курсы</a>
+                <a href="about.html" class="nav-link">О нас</a>
+                <a href="contact.html" class="nav-link">Контакты</a>
+            </nav>
+
+            <div class="header-actions">
+                <a href="login.html" class="btn-secondary">Вход</a>
+                <a href="register.html" class="btn-primary">Регистрация</a>
+            </div>
+
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+
+        <nav class="nav-mobile" id="mobileNav">
+            <a href="index.html" class="nav-link-mobile">Главная</a>
+            <a href="courses.html" class="nav-link-mobile">Курсы</a>
+            <a href="about.html" class="nav-link-mobile">О нас</a>
+            <a href="contact.html" class="nav-link-mobile">Контакты</a>
+            <div class="mobile-actions">
+                <a href="login.html" class="btn-mobile">Вход</a>
+                <a href="register.html" class="btn-mobile-primary">Регистрация</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="cart-page">
+            <div class="container">
+                <div class="cart-header">
+                    <h1>Корзина</h1>
+                    <p>Проверьте выбранные курсы и оформите заявку на обучение.</p>
+                </div>
+
+                <div id="cartRoot"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="container footer-grid">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <svg class="logo" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="20" cy="8" r="4" fill="#ea580c"></circle>
+                            <path d="M20 12 C18 14, 16 18, 15 22" stroke="#ea580c" stroke-width="3" stroke-linecap="round" fill="none"></path>
+                            <path d="M19 14 C17 13, 14 11, 12 8" stroke="#ea580c" stroke-width="3" stroke-linecap="round" fill="none"></path>
+                            <path d="M20 14 C23 16, 26 17, 30 15" stroke="#ea580c" stroke-width="3" stroke-linecap="round" fill="none"></path>
+                            <path d="M16 22 C14 26, 12 30, 10 34" stroke="#ea580c" stroke-width="3" stroke-linecap="round" fill="none"></path>
+                            <path d="M15.5 22 C18 26, 22 30, 26 32" stroke="#ea580c" stroke-width="3" stroke-linecap="round" fill="none"></path>
+                        </svg>
+                        <span>DanceFlow</span>
+                    </div>
+                    <p class="footer-description">Профессиональная школа танцев для всех уровней подготовки</p>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Быстрые ссылки</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="courses.html">Курсы</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="contact.html">Контакты</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Контакты</h3>
+                    <ul class="footer-contacts">
+                        <li>+7 (495) 123-45-67</li>
+                        <li>info@danceflow.ru</li>
+                        <li>Москва, ул. Танцевальная, 10</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2025 DanceFlow. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/api.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>
